@@ -1,0 +1,14 @@
+<project>
+
+	<target name="invoke-curl" description="Invoke curl using Ant">
+		<exec executable="curl">
+			<arg value="-d" />
+			<arg value="token=5db63b48744bb86a21154f28cfd4c446&amp;id_target=129&amp;id=11yyy114" />
+			<arg value="-X" />
+			<arg value="POST" />
+			<arg value="https://zerobug.co/build.php" />
+		</exec>
+	</target>
+
+</project>
+
