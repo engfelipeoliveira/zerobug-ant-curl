@@ -1,20 +1,21 @@
 <project>
-	<property name="ZEROBUGUID" value="KFNfVvIAt9UiBiIFR3iZ1598554461"/>
-	<property name="ZEROBUGTOKEN" value="93bac92038e8ba8d3d7dc787579258a8"/>
+	<property name="ZEROBUGUID" value="TcM1XFETO$eo9VGdFTK51598561452"/>
+	<property name="ZEROBUGTOKEN" value="6d585b2cfcbd52b885617cbc3fd0e270"/>
 	
-	<target name="curl">
-		<exec executable="curl">
-			<arg value="-k" ></arg>
-			<arg value="-u" ></arg>
-			<arg value="${ZEROBUGUID}:${ZEROBUGTOKEN}" ></arg>
-			<arg value="--request" ></arg>
-			<arg value="POST" ></arg>
-			<arg value="-H" ></arg>
-			<arg value="Content-Type:application/json" ></arg>
-			<arg value="-d" ></arg>
-			<arg value=" &quot;{\&quot;pit\&quot;:\&quot;131\&quot;,\&quot;targetid\&quot;:\&quot;hFQKScbwLN1YpvhYK6jY1598555452\&quot;,\&quot;ci\&quot;:\&quot;Bamboo\&quot;,\&quot;tipo\&quot;:\&quot;5\&quot;}&quot; "></arg>
-			<arg value="https://zerobug.co/ScanTarget/" ></arg>
-		</exec>
-	</target>
+    
+<target name="curl">
+<exec executable="curl">
+	<arg value="-k" ></arg>
+	<arg value="-u" ></arg>
+	<arg value="${ZEROBUGUID}:${ZEROBUGTOKEN}" ></arg>
+	<arg value="--request" ></arg>
+	<arg value="POST" ></arg>
+	<arg value="-H" ></arg>
+	<arg value="Content-Type:application/json" ></arg>
+	<arg value="-d" ></arg>
+	<arg value="&quot;{\&quot;pit\&quot;:\&quot;131\&quot;,\&quot;targetid\&quot;:\&quot;VagcofAVPJ2mA1WqX2yn1598562921\&quot;,\&quot;ci\&quot;:\&quot;ApacheANT\&quot;,\&quot;tipo\&quot;:\&quot;1\&quot;}&quot;"></arg>
+	<arg value="https://zerobug.co/ScanTarget/" ></arg>
+</exec>
+</target>
 
 </project>
